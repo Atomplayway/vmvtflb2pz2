@@ -1,0 +1,21 @@
+{
+  "name": "product-catalog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"node server.js\" \"vite\"",
+    "build": "vite build",
+    "start": "npm run build && node server.js",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "express": "^4.18.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^8.2.2",
+    "vite": "^5.4.1"
+  }
+}
